@@ -69,3 +69,13 @@ python scripts/run_realdata_1000step_check.py \
 - `results/samatnext_speed8_realdata_1000step/summary.md`
 
 Only the small summary files are intended for Git.
+
+## Next Python Syntax Stage
+
+The next stage after the WikiText stability check is a Python syntax
+pretraining pipeline with a dedicated real-data throughput optimization phase.
+See [PYTHON_PRETRAIN_PLAN.md](PYTHON_PRETRAIN_PLAN.md).
+
+Do not start the overnight Python run until the pre-tokenized smoke benchmark
+selects the fastest valid batcher mode and confirms stable loss/gradient
+behavior.

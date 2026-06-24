@@ -28,6 +28,7 @@ outputs/
 artifacts/
 large_caches/
 generated_caches/
+data_prepared/
 
 # Model weights and generated binary artifacts
 *.safetensors
@@ -67,3 +68,12 @@ results/samatnext_speed8_realdata_1000step/train_log.jsonl
 results/samatnext_speed8_realdata_1000step/train_log.csv
 !results/samatnext_speed8_realdata_1000step/summary.json
 !results/samatnext_speed8_realdata_1000step/summary.md
+!results/samatnext_speed8_python_pretrain/
+results/samatnext_speed8_python_pretrain/*
+results/samatnext_speed8_python_pretrain/train_log.jsonl
+results/samatnext_speed8_python_pretrain/train_log.csv
+results/samatnext_speed8_python_pretrain/eval_log.jsonl
+!results/samatnext_speed8_python_pretrain/pipeline_benchmark.json
+!results/samatnext_speed8_python_pretrain/pipeline_benchmark.md
+!results/samatnext_speed8_python_pretrain/summary.json
+!results/samatnext_speed8_python_pretrain/summary.md
