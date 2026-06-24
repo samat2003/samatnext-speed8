@@ -1,0 +1,16 @@
+{
+  "model_name": "SamatNext-Speed-8L-56M",
+  "num_layers": 8,
+  "hidden_size": 640,
+  "intermediate_size": 1792,
+  "num_attention_heads": 10,
+  "num_key_value_heads": 2,
+  "head_dim": 64,
+  "vocab_size": 32768,
+  "max_position_embeddings": 512,
+  "rms_norm_eps": 1e-6,
+  "tie_word_embeddings": true,
+  "initializer_range": 0.02,
+  "rope_theta": 10000.0,
+  "attention_dropout": 0.0
+}

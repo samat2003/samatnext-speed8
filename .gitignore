@@ -1,0 +1,69 @@
+# Python / local environments
+.venv/
+venv/
+env/
+__pycache__/
+**/__pycache__/
+**pycache**/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets / local config
+.env
+.env.*
+*.log
+
+# Large datasets, model snapshots, and caches
+models/
+datasets/
+data/
+hf_cache/
+.cache/
+checkpoints/
+wandb/
+runs/
+outputs/
+artifacts/
+large_caches/
+generated_caches/
+
+# Model weights and generated binary artifacts
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+*.gguf
+
+# Local archived experiment source kept out of the initial active-model public repo.
+AGENTS.md
+configs/samatnext_speed8_100m.json
+configs/samatnext_speed8_640_vocab24k.json
+configs/samatnext_speed8_896.json
+configs/samatnext_speed8_gdn6_softmax2_640.json
+scripts/benchmark_samatnext_speed_hybrid_gdn.py
+scripts/benchmark_train_speed.py
+scripts/build_samatnext_speed_hybrid_gdn.py
+scripts/check_softmax8_ablation.py
+scripts/check_transfer_quality.py
+scripts/download_qwen.py
+scripts/qwen_healthcheck.py
+scripts/run_humaneval_50.py
+scripts/run_recovery_stage1.py
+scripts/transfer_qwen_to_samatnext_gdn8.py
+scripts/transfer_qwen_to_softmax8.py
+tests/test_qwen_baseline.py
+
+# Result logs are often large. Allow only selected public summaries.
+results/*
+!results/samatnext_speed8_baseline_102k/
+results/samatnext_speed8_baseline_102k/*
+!results/samatnext_speed8_baseline_102k/*.json
+!results/samatnext_speed8_realdata_1000step/
+results/samatnext_speed8_realdata_1000step/*
+results/samatnext_speed8_realdata_1000step/train_log.jsonl
+results/samatnext_speed8_realdata_1000step/train_log.csv
+!results/samatnext_speed8_realdata_1000step/summary.json
+!results/samatnext_speed8_realdata_1000step/summary.md
